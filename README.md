@@ -44,7 +44,7 @@
 **Correct.** The receipt model can identify commonly used fields and their values in scanned or photographed receipt documents.
 
 
-1. You have a large set of documents with varying structures that contain customer name and address information. You want to extract entities for each customer. Which prebuilt model should you use? 
+### 1. You have a large set of documents with varying structures that contain customer name and address information. You want to extract entities for each customer. Which prebuilt model should you use? 
 
 - Read model.
   **Incorrect.** The read model can extract text and identify languages but doesn't support entity extraction.
@@ -54,7 +54,7 @@
 
 - ID document model.
 
-2. You are using the prebuilt layout model to analyze a document with many checkboxes. You want to find out whether each box is checked or empty. What object should you use in the returned JSON code? 
+### 2. You are using the prebuilt layout model to analyze a document with many checkboxes. You want to find out whether each box is checked or empty. What object should you use in the returned JSON code? 
 
 - Selection marks.
   **Correct.** Selection marks record checkboxes and radio buttons and include whether they're selected or not.
@@ -63,7 +63,7 @@
 
 - Confidence indicators.
 
-3. You submit a Word document to the Azure AI Document Intelligence general document model for analysis but you receive an error. The file is A4 size, contains 1 MB of data, and is not password-protected. How should you resolve the error? 
+### 3. You submit a Word document to the Azure AI Document Intelligence general document model for analysis but you receive an error. The file is A4 size, contains 1 MB of data, and is not password-protected. How should you resolve the error? 
 
 - Change from the free tier to the standard tier.
 
@@ -73,7 +73,7 @@
   **Correct.** Word documents are not supported by Azure AI Document Intelligence but PDF documents are supported. Azure AI Document Intelligence is designed to analyze scanned and photographed paper documents, not documents that are already in a digital format, so you should consider using another technology to extract the data in Word documents.
 
 
-1. A person plans to use an Azure Document Intelligence prebuilt invoice model. To extract document data using the model, what are two calls they need to make to the API?
+### 1. A person plans to use an Azure Document Intelligence prebuilt invoice model. To extract document data using the model, what are two calls they need to make to the API?
 
 - Train Model and Get Model Labels
 
@@ -83,7 +83,7 @@
 
 - Create Azure Document Intelligence and Get Analyze Invoice Result
 
-2. A person needs to build an application that submits expense claims and extracts the merchant, date, and total from scanned receipts. What's the best way to do this?
+### 2. A person needs to build an application that submits expense claims and extracts the merchant, date, and total from scanned receipts. What's the best way to do this?
 
 - Use the Read API of the Computer Vision service.
 
@@ -93,7 +93,7 @@
 
 - Use Azure Document Intelligence's Layout service
 
-3. A person is building a custom model with Azure Document Intelligence services. What is required to train a model?
+### 3. A person is building a custom model with Azure Document Intelligence services. What is required to train a model?
 
 - Along with the form to analyze, JSON files need to be provided.
 
@@ -123,4 +123,25 @@
 - That the custom models all have the same model ID.
 
 - That the custom models all have the same list of fields.
+
+## 1. Which of the following values does Cognitive Search use to match a form submitted to a custom skill with the right response from that skill?
+
+- formUrl.
+
+- recordId.
+
+**Correct.** The recordId value in the output is matched to the recordId of a form in the input.
+
+- formSasToken.
+
+## 2. You're troubleshooting your Cognitive Search indexing process. You have a single custom skill that calls Azure AI Document Intelligence, but requests are never received by your skill. Which of the following stages of the indexing process might be causing the problem?
+
+- Push to index.
+
+- Output field mapping.
+
+- Document cracking.
+
+**Correct.** Since the document cracking stage happens before the skillset execution, it might prevent requests from reaching your custom skill.
+
 
