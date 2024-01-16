@@ -43,3 +43,33 @@
 
 **Correct.** The receipt model can identify commonly used fields and their values in scanned or photographed receipt documents.
 
+
+1. You have a large set of documents with varying structures that contain customer name and address information. You want to extract entities for each customer. Which prebuilt model should you use? 
+
+- Read model.
+  **Incorrect.** The read model can extract text and identify languages but doesn't support entity extraction.
+
+- General document model.
+  **Correct.** The general document model is the only one that supports entity extraction.
+
+- ID document model.
+
+2. You are using the prebuilt layout model to analyze a document with many checkboxes. You want to find out whether each box is checked or empty. What object should you use in the returned JSON code? 
+
+- Selection marks.
+  **Correct.** Selection marks record checkboxes and radio buttons and include whether they're selected or not.
+
+- Bounding boxes.
+
+- Confidence indicators.
+
+3. You submit a Word document to the Azure AI Document Intelligence general document model for analysis but you receive an error. The file is A4 size, contains 1 MB of data, and is not password-protected. How should you resolve the error? 
+
+- Change from the free tier to the standard tier.
+
+- Submit the document one page at a time.
+
+- Convert the document to PDF format.
+  **Correct.** Word documents are not supported by Azure AI Document Intelligence but PDF documents are supported. Azure AI Document Intelligence is designed to analyze scanned and photographed paper documents, not documents that are already in a digital format, so you should consider using another technology to extract the data in Word documents.
+
+
