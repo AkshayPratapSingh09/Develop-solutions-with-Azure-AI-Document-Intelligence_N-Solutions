@@ -102,3 +102,25 @@
 - Training must be done through language specific SDKs.
 
 - Nothing else is required.
+
+
+## 1. You have a composed model that consists of three custom models. You're writing code that sends forms to the composed model, and you need to check which of the custom models was used to analyze each form. Which property should you use from the returned JSON?
+
+- modelId.
+
+- status.
+
+- docType.
+
+**Correct.** The docType property includes the model ID of the custom model that was used to analyze the document.
+
+## 2. You're trying to create a composed model, but you're receiving an error. Which of the following should you check?
+
+- That the custom models were trained with labels.
+
+**Correct.** Only custom models that have been trained with labeled example forms can be added to a composed model.
+
+- That the custom models all have the same model ID.
+
+- That the custom models all have the same list of fields.
+
