@@ -73,3 +73,32 @@
   **Correct.** Word documents are not supported by Azure AI Document Intelligence but PDF documents are supported. Azure AI Document Intelligence is designed to analyze scanned and photographed paper documents, not documents that are already in a digital format, so you should consider using another technology to extract the data in Word documents.
 
 
+1. A person plans to use an Azure Document Intelligence prebuilt invoice model. To extract document data using the model, what are two calls they need to make to the API?
+
+- Train Model and Get Model Labels
+
+- Analyze Invoice and Get Analyze Invoice Result
+
+**Correct:** The Analyze Invoice function starts the form analysis and returns a result ID, which they can pass in a subsequent call to the Get Analyze Invoice Result function to retrieve the results.
+
+- Create Azure Document Intelligence and Get Analyze Invoice Result
+
+2. A person needs to build an application that submits expense claims and extracts the merchant, date, and total from scanned receipts. What's the best way to do this?
+
+- Use the Read API of the Computer Vision service.
+
+- Use Azure Document Intelligence's prebuilt receipts model
+
+**Correct:** Use the Azure Document Intelligence's prebuilt receipts model. It can intelligently extract the required fields even if the scanned receipts have different names in them.
+
+- Use Azure Document Intelligence's Layout service
+
+3. A person is building a custom model with Azure Document Intelligence services. What is required to train a model?
+
+- Along with the form to analyze, JSON files need to be provided.
+
+**Correct:** The labels needed in training are referenced in the ocr.json files, labels.json files, and single fields.json file.
+
+- Training must be done through language specific SDKs.
+
+- Nothing else is required.
