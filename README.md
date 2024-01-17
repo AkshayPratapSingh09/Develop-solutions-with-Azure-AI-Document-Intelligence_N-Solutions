@@ -145,3 +145,33 @@
 **Correct.** Since the document cracking stage happens before the skillset execution, it might prevent requests from reaching your custom skill.
 
 
+
+## 1. You want to create a knowledge base from an existing FAQ document. What should you do?
+
+- Create an empty knowledge base and manually enter the FAQ questions and answers.
+
+- Create a new knowledge base, importing the existing FAQ document.
+  **Correct.** You can create a knowledge base from an existing document or web page.
+
+- Create a new knowledge base, selecting only the Professional chit-chat source.
+
+## 2. How can you add a multi-turn context for a question in an existing knowledge base?
+
+- Add synonyms to the knowledge base.
+
+- Add alternative phrasing to the question.
+
+- Add a follow-up prompt to the question.
+  **Correct.** To add a multi-turn context to a question, define a follow-up prompt.
+
+## 3. How can you enable users to use your knowledge base through email?
+
+- Add Friendly Chit-chat to the knowledge base.
+
+- Enable Active Learning for the knowledge base and include the user's email address as the userId parameter in responses.
+
+- Create a bot based on your knowledge base and configure an email channel.
+  **Correct.** You can create a bot for your published knowledge base and configure a channel for email communication.
+
+
+
