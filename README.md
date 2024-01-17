@@ -193,5 +193,152 @@
   **Correct.** Linked entities enable you to disambiguate common entities of the same name.
 
 
+## 1. You want to train a model to classify book summaries by their genre, and some of your favorite books are both mystery and thriller. Which type of project should you build?
 
+- A single label classification project
+
+- A multiple label classification project
+  **That answer's correct.** Use a multiple label classification project to label books as multiple genres.
+
+- A varied label classification project
+
+## 2. You just got notification your training job is complete. What is your next step?
+
+- Label more data
+
+- Deploy your model
+
+- View your model details
+  **That answer's correct.** First view your model details to see how it scored, the classification distribution, and where it needs improvement.
+
+## 3. You want to submit a classification task via the API. How do you get the results of the classification?
+
+- The result is in the response of the classification request.
+
+- Call an endpoint with your deployment name to get the most recent classification.
+
+- Call the URL provided in the header of the request response.
+  **That answer's correct.** Get the value from the operation-location header in the request response, and use that to retrieve the results of the classification request.
+
+
+## 1. You've trained your model and you're seeing that it doesn't recognize your entities. What metric score is likely low to indicate that issue?
+
+- Recall
+  **That answer's correct.** Recall indicates how well the model extracts entities, regardless of which entity that is.
+
+- Precision
+
+- F1 score
+
+## 2. You just finished labeling your data. How and where is that file stored to train your model?
+
+- JSON file, in my storage account container for the project
+  **That answer's correct.** The JSON file lives next to the dataset in your container for the model to use during training.
+
+- XML file, in my local project folder
+
+- YAML file, anywhere in my Azure account
+
+## 3. You train your model with only one source of documents, even though real extraction tasks will come from several sources. What data quality metric do you need to increase?
+
+- Distribution
+
+- Accuracy
+
+- Diversity
+  **That answer's correct.** Having the right data diversity will lead to better extraction performance.
+
+
+## 1. Your app must interpret a command such as "turn on the light" or "switch the light on". What do these phrases represent in a language model?
+
+- Intents.
+
+- Utterances.
+  **That's correct.** Utterances are example phrases that indicate a specific intent.
+
+- Entities.
+
+## 2. Your app must interpret a command to book a flight to a specified city, such as "Book a flight to Paris." How should you model the city element of the command?
+
+- As an intent.
+
+- As an utterance.
+
+- As an entity.
+  **That's correct.** The city is an entity to which the intent (booking a flight) should be applied.
+
+## 3. Your language model needs to detect an email when present in an utterance. What is the simplest way to extract that email?
+
+- Use Regular Expression entities.
+
+- Use prebuilt entity components.
+  **That's correct.** When a language model needs to detect a common entity, use prebuilt components to have the Azure AI Language service automatically detect the entity.
+
+- Use Learned entity components.
+
+
+## 1. What function of Azure AI Translator should you use to convert the Chinese word "你好" to the English word "Hello"?
+
+- Detect
+
+- Translate
+  **Correct.** Translation converts text from one language to another.
+
+- Transliterate
+
+## 2. What function of Azure AI Translator should you use to convert the Russian word "спасибо" in Cyrillic characters to "spasibo" in Latin characters?
+
+- Detect
+
+- Translate
+
+- Transliterate
+  **Correct.** Transliteration converts text from one script to another.
+
+## 3. What function of the Azure AI Translator service should you use to convert the Chinese word "你好" to the English word "Hello"?
+
+- detect
+
+- translate
+  **Correct.** Translation converts text from one language to another.
+
+- transliterate
+
+## 4. What function of the Azure AI Translator service should you use to convert the Russian word "спасибо" in Cyrillic characters to "spasibo" in Latin characters?
+
+- detect
+
+- translate
+
+- transliterate
+  **Correct.** Transliteration converts text from one script to another.
+
+
+## 1. What information do you need from your Azure AI Speech service resource to consume it using the Azure AI Speech SDK?
+
+- The location and one of the keys
+  **Correct.** The Azure AI Speech SDK requires the location and a key to connect to the Azure AI Speech service.
+
+- The primary and secondary keys
+
+- The endpoint and one of the keys
+  **Incorrect.** The Azure AI Speech SDK requires the location and a key to connect to the Azure AI Speech service.
+
+## 2. Which object should you use to specify that the speech input to be transcribed to text is in an audio file?
+
+- SpeechConfig
+
+- AudioConfig
+  **Correct.** Use an AudioConfig to specify the input source for speech.
+
+- SpeechRecognizer
+
+## 3. How can you change the voice used in speech synthesis?
+
+- Specify a SpeechSynthesisOutputFormat enumeration in the SpeechConfig object.
+
+- Set the SpeechSynthesisVoiceName property of the SpeechConfig object to the desired voice name.
+  **Correct.** To set a voice, set the SpeechSynthesisVoiceName property of the SpeechConfig to a voice name, such as "en-GB-George".
+
+- Specify a filename in the AudioConfig object.
 
