@@ -342,3 +342,132 @@
 
 - Specify a filename in the AudioConfig object.
 
+
+## 1. Which API would be best for this scenario? You need to read a large number of files with high accuracy. The text is short sections of handwritten text, some in English and some of it is in multiple languages.
+
+- A custom Language API
+
+- Document Intelligence API
+  **Incorrect:** Document Intelligence is the best choice for large amounts of structured text and multiple languages, however, isn't the best choice for shorter, unstructured handwritten text.
+
+- Image Analysis API
+  **Correct:** The Image Analysis service OCR feature is best suited for short sections of handwritten text.
+
+## 2. What levels of division are the OCR results returned?
+
+- Only total content and pages of text.
+
+- Pages, words, and lines of text.
+
+- Total content, pages, words, and lines of text.
+  **Correct:** Results contain total content, pages, words, and lines, as well as bounding boxes for each word and line.
+
+## 3. You've scanned a letter into PDF format and need to extract the text it contains. What should you do?
+
+- Use the Azure AI Custom Vision service
+
+- Use the Image Analysis API of the Azure AI Vision service.
+
+- Use the Document Intelligence API.
+  **Correct:** The Document Intelligence API can be used to process PDF formatted files.
+
+## 1. You want to train a model that can categorize an image as "cat" or "dog" based on its subject. What kind of Azure AI Custom Vision project should you create?
+
+- Image classification (multiclass)
+  **That's correct.** To train a model that classifies an image using a single tag, use an Image classification (multiclass) project.
+
+- Image classification (multilabel)
+
+- Object detection
+
+## 2. Which of the following kinds of Azure resource can you use to host a trained Azure AI Custom Vision model?
+
+- Azure AI Custom Vision (Training)
+
+- Azure AI Vision
+
+- Azure AI Services
+  **That's correct.** You can publish a trained Azure AI Custom Vision model to either an Azure AI Custom Vision (Prediction) resource (which is not an option here) or an Azure AI Services resource.
+
+
+## 1. What does an object detection model predict?
+
+- The location and class of specific classes of object in an image.
+  **That's correct.** Object detection is used to identify bounding boxes containing specific classes of object in an image.
+
+- The class of the main subject of an image.
+
+- The file type of an image.
+
+## 2. What must you do before taking advantage of the smart labeler tool when creating an object detection model?
+
+- Create a JSON file containing bounding box coordinates.
+
+- Tag some images with objects of each class and train an initial object detection model.
+  **That's correct.** To take advantage of the smart labeler, tag some images and train an initial model. Subsequently, the portal will suggest tags for new images.
+
+- Train an image classification (multilabel) model.
+
+## 1. Which of the following facial attributes can the Azure AI Vision service predict?
+
+- Location.
+  **That's correct.** The Azure AI Vision service predicts location for a detected face.
+
+- Type of eye-glasses.
+
+- Occlusion.
+
+## 2. You need to create a facial recognition solution to identify named employees. Which service should you use?
+
+- Azure AI Vision.
+
+- Azure AI Custom Vision.
+
+- Face.
+  **That's correct.** Use the Face service to create a facial recognition solution.
+
+## 3. You need to verify that the person in a photo taken at the hospital reception is the same person in a photo taken at a ward entrance 10 minutes later. What should you do?
+
+- Create a People Group and add a person for every hospital visitor with multiple photographs to train a model.
+
+- Verify the face in the ward photo by comparing it to the detected face ID from the reception photo.
+  **That's correct.** The most efficient approach is to compare the two faces using the detected face ID within 24 hours.
+
+- Compare the Age, head pose, and hair color for the faces in the reception and ward photos.
+
+## 1. You want Azure Video Indexer to analyze a video. What must you do first?
+
+- Use the Azure AI Vision service to extract key frames from the video.
+
+- Upload the video to Azure Video Indexer and index it.
+  **That's correct.** You need to index a video before analyzing it.
+
+- Store the video file in an Azure blob store container.
+
+## 2. You want Azure Video Indexer to recognize brands in videos recorded from conference calls. What should you do?
+
+- Edit the Brands model to show brands suggested by Bing, and add any new brands you want to detect.
+  **That's correct.** You can both detect known brands, and well as include new brands you want to detect by providing information about it.
+
+- Edit the conference call videos to include a caption of each brand seen on their first appearance.
+
+- Embed the Azure Video Indexer widgets in a custom web site that has all the brand images stored for reference.
+
+
+## 1. You want to use the Azure AI Vision Analyze Image function to generate an appropriate caption for an image. Which visual feature should you specify?
+
+- Tags
+
+- Description
+  **That's correct.** To generate a caption, include the Description visual feature in your analysis.
+
+- Categories
+
+## 2. What is the purpose of the Azure AI Vision service?
+
+- To provide functionality for audio transcription
+
+- To extract information from images
+  **The Azure AI Vision service is designed to help you extract information from images through various functionalities.**
+
+- To detect the presence and location of specific sounds within an audio file
